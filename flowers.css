@@ -1,0 +1,463 @@
+@import "tailwindcss";
+
+
+
+.noto-font{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+
+ 
+}
+
+.nav-con{
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+}
+
+.nav-item a {
+    display: flex;
+    gap: 5%;
+    text-decoration: none;
+    color: black;
+   
+   
+    
+  
+   
+   
+}
+.nav-item{
+    margin-right: 15%;
+    margin-left: 7%;
+    
+}
+.nav-item a p{
+    padding: 5%;
+}
+#aa{
+  white-space: nowrap;
+}
+.con-head{
+    display: flex;
+    margin: 10%;
+    justify-content: space-evenly;
+   
+}
+.max{
+    max-width: 100%;
+}
+.head-item{
+    width: 35%;
+}
+.head-item img{
+    width: 90%;
+}
+.p-color{
+    color: rgba(0, 0, 0, 0.5);
+}
+.head-item h1{
+    font-weight: bold;
+}
+.orange-color{
+    color: #E95A08;
+}
+.cap{
+ text-align: center;
+ width: 50%;
+ margin: 0 auto;
+ 
+}
+.txt{
+    font-weight: 700;
+    font-size: 2em;
+}
+.main-contain{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin:7%;
+    margin-top: 5%;
+  
+   
+}
+.main-con-item p{
+    text-align: center;
+   
+
+}
+.p-weight{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.main-con-item{
+    margin: 5%;
+}
+.btn{
+  background-color: #E95A08;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  cursor: copy;
+  
+}
+.btn:hover{
+    background-color:lightgreen ;
+}
+.container{
+    display: flex;
+ 
+  
+   
+   
+  
+    width: 80%;
+     margin: 0 auto;
+  
+}
+.con-item img{
+    width:100%;
+    display: block;
+}
+.con-item ul{
+    width:50%;
+    margin: 0 auto;
+    display: block;
+    
+  
+   
+ 
+}
+.con-item ul li{
+    padding: 3%;
+}
+
+.bold-size{
+  font-weight: 700;
+  font-size: 2.5em;
+}
+.cc{
+    width:20%;
+    height: 20%;
+   
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+     box-shadow:1px,1px,0px rgba(0,0,0,0.2);
+    
+    
+   
+}
+.offer-section {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  margin: 10%;
+ 
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.right {
+  flex: 2;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.small-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.offer-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  justify-content: center; 
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2); 
+}
+
+.overlay-text h3, .overlay-text h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.overlay-text a {
+  color: white;
+  margin-top: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+}
+.dd{
+  text-align: center;
+  margin-top: 7%;
+}
+.dd p{
+  width:50%;
+  margin: 0 auto;
+}
+.subscribe-section{
+  background-image: url(assets/news-letter-bg.png);
+  height: 350px;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.last-container{
+ text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.subscribe-form input{
+  padding:10px;
+  padding:10px 250px 10px 10px;
+  border: none;
+  outline: none;
+  
+}
+.subscribe-form button{
+  padding: 10px 20px;
+  border: none;
+  background-color: #E95A08;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  
+}
+.last-container h2{
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.footer-container{
+  display: flex;
+ 
+  gap: 5%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5%;
+ 
+}
+.foot-item-t{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  gap:1vh;
+ 
+
+}
+.foot-item-p img{
+  padding:20px;
+}
+.foot-item-t a{
+  text-decoration: none;
+  color: black;
+  
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width:576px) {
+  .faka,#aa{
+    display: none;
+  }
+  .nav-con{
+    justify-content:space-between;
+    margin: auto 0;
+  }
+  .con-head{
+    flex-direction: column-reverse;
+    width: 100%;
+   
+  }
+  .head-item img{
+    width: 100%;
+    
+   
+  }
+  .head-item{
+    width: 80%;
+  }
+  .cap{
+    width: 80%;
+  }
+  .main-contain{
+   
+   grid-template-columns:repeat(2,1fr) ;
+   width: 90%;
+   gap: 4%;
+  
+   
+  }
+  .main-con-item img{
+    width: 100%;
+    margin-top: 5%;
+    
+  }
+  .main-con-item{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .container{
+    margin-top: 40%;
+    flex-direction: column;
+    
+    
+  }
+  .cc{
+    width: 50%;
+  }
+  .con-item ul{
+    width: 90%;
+  }
+  .dd{
+    width: 100%;
+}
+.dd p{
+  width: 90%;
+}
+.offer-section{
+  flex-direction: column;
+}
+.subscribe-form{
+  display: flex;
+  
+}
+.last-container input{
+  width:10%;
+  margin: 2%;
+  margin-top:none;
+}
+.last-container button{
+  height: 2%;
+  margin-top: 2%;
+  
+
+}
+.subscribe-section{
+  width: 100%;
+}
+.footer-container{
+  flex-direction: column;
+}
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .faka,#aa{
+    display: none;
+  }
+  .nav-con{
+    justify-content:space-between;
+    margin: auto 0;
+  }
+  .con-head{
+    flex-direction: column-reverse;
+    width: 100%;
+   
+  }
+  .head-item img{
+    width: 100%;
+    
+   
+  }
+  .head-item{
+    width: 80%;
+  }
+  .cap{
+    width: 80%;
+  }
+  .main-contain{
+   
+   grid-template-columns:repeat(2,1fr) ;
+   width: 90%;
+   gap: 4%;
+  
+   
+  }
+  .main-con-item img{
+    width: 100%;
+    margin-top: 5%;
+    
+  }
+  .main-con-item{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .container{
+    margin-top: 40%;
+    flex-direction: column;
+    
+    
+  }
+  .cc{
+    width: 50%;
+  }
+  .con-item ul{
+    width: 90%;
+  }
+  .dd{
+    width: 100%;
+}
+.dd p{
+  width: 90%;
+}
+.offer-section{
+  flex-direction: column;
+}
+.subscribe-form{
+  display: flex;
+  
+}
+.last-container input{
+  width:10%;
+  margin: 2%;
+  margin-top:none;
+}
+.last-container button{
+  height: 2%;
+  margin-top: 2%;
+  
+
+}
+.subscribe-section{
+  width: 100%;
+}
+.footer-container{
+  flex-direction: column;
+}
+  
+}
